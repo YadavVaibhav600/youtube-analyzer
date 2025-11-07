@@ -9,11 +9,11 @@ require('dotenv').config();
 
 const cors = require('cors');
 app.use(cors({
-     origin: ['http://localhost:3001', 'https://your-frontend-app-name.netlify.app']
+     origin: ['http://localhost:3001', 'https://thunderous-sherbet-d5eb0e.netlify.app']
 }));
 
 app.use(express.json());
-app.use(cors());
+
 
 // connecting the routes file to our app 
 app.use('/api' , transcriptRoutes);
